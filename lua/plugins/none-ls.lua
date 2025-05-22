@@ -7,8 +7,8 @@ return {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.diagnostics.erb_lint,
-        null_ls.builtins.diagnostics.rubocop,
-        null_ls.builtins.formatting.rubocop,
+        null_ls.builtins.formatting.gofmt,
+        null_ls.builtins.formatting.goimports
       },
     })
 

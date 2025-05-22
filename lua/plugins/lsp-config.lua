@@ -40,9 +40,6 @@ return {
 			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.solargraph.setup({
-				capabilities = capabilities,
-			})
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
@@ -52,6 +49,10 @@ return {
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
 			})
+      lspconfig.astro.setup({
+        capabilities = capabilities
+      })
+      lspconfig.gopls.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>mn", vim.lsp.buf.definition, {})
@@ -65,6 +66,9 @@ return {
 			vim.g.rustfmt_autosave = 1
 		end,
 	},
+  {
+    "wuelnerdotexe/vim-astro",
+  },
 	--  {
 	--    "sigmasd/deno-nvim",
 	--    config = function ()
