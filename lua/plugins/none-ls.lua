@@ -8,7 +8,7 @@ return {
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.diagnostics.erb_lint,
         null_ls.builtins.formatting.gofmt,
-        null_ls.builtins.formatting.goimports_revisor
+        null_ls.builtins.formatting.goimports_reviser
       },
     })
 
